@@ -2,7 +2,7 @@
 # result = nums[0] + nums[1]
 # print(result)
 
-# input = ["s", "t", "r", "i", "n", "g"]	
+# input = ["s", "t", "r", "i", "n", "g"]
 
 # def reverse_string(input):
 #     return input[::-1]
@@ -10,18 +10,29 @@
 # result = reverse_string(input)
 # print(result)
 
-s = "()[]{}"
-def isValid(s):
-    stack = []
-    mapping = {")": "(", "}": "{", "]": "["}
-    for char in s:
-        if char in mapping:
-            top_element = stack.pop() if stack else '#'
-            if mapping[char] != top_element:
-                return False
-        else:
-            stack.append(char)
-    return not stack
+# s = "()[]{}"
+# def isValid(s):
+#     stack = []
+#     mapping = {")": "(", "}": "{", "]": "["}
+#     for char in s:
+#         if char in mapping:
+#             top_element = stack.pop() if stack else '#'
+#             if mapping[char] != top_element:
+#                 return False
+#         else:
+#             stack.append(char)
+#     return not stack
 
-result = isValid(s)
-print(result)
+# result = isValid(s)
+# print(result)
+
+# nums = [3, 0, 1]
+
+
+# def missingNumber(nums):
+#     n = len(nums)
+#     return n * (n + 1) // 2 - sum(nums)
+
+
+# result = missingNumber(nums)
+# print(result)

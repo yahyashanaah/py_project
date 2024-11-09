@@ -1,10 +1,16 @@
+def my_decorator(func):
+    def wrapper():
+        print("Before the function runs")
+        func()  # Call the original function
+        print("After the function runs")
+    return wrapper
 
-x = 5
-y = 5
 
-for i in range(x):
-    print("x" * x)
-    for j in range(2):
-        print("x" + " " * (x-2) + "x")
-        print("x" * x)
-        
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+

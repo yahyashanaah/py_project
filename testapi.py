@@ -79,7 +79,7 @@ def get_users():
 # Route to read a specific user by ID (GET)
 
 
-@app.route('/users/<int:user_id>', methods=['GET'])
+@app.route('/users/<int:user_id>', methods=['GET']) # def get_user(user_id): conn = get_db_connection() user = conn.execute(')
 @user_exists
 def get_user(user_id):
     conn = get_db_connection()

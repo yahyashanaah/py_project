@@ -72,7 +72,7 @@ create_table()
 # insert_user("Alice", 30, "alice@example.com")
 # insert_user("yahya", 28, "yahyashanaah@gmail.com")
 # read_users()
-update_user(1, age=22)  # Update Alice's age
+# update_user(1, age=22)  # Update Alice's age
 # read_users()
 # delete_user(2)  # Delete Bob
 # read_users()
